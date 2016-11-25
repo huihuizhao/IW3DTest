@@ -69,8 +69,9 @@ public class GetValues extends iw3d {
 			}
 		}
 
-		SaveArraytoTxt.SaveArray01(tempStringArray, "D://FocusMap//程序代码//IW3D_Java三维插值//outTemp.txt");
-		parent.getReadData(dataLength - 1, 3, values); // !!!
+//		SaveArraytoTxt.SaveArray01(tempStringArray, "D://FocusMap//程序代码//IW3D_Java三维插值//outTemp.txt");
+		SaveArraytoTxt.SaveArray01(tempStringArray, "src/interpolation/Data/testdata/outTemp.txt");
+		parent.getReadData(dataLength - 1, 3, values); 
 
 	}
 }

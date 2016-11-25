@@ -546,7 +546,8 @@ public class iw3d extends JFrame implements ItemListener {
 		// d1.setVisible(true);
 		// Directory = d1.getDirectory();
 		// Filename = d1.getFile();
-		Directory = "D:\\FocusMap\\程序代码\\IW3D_Java三维插值\\testdata\\";
+		Directory = "src/interpolation/Data/testdata/";
+//		Directory = "D:\\FocusMap\\程序代码\\IW3D_Java三维插值\\testdata\\";
 		Filename = "original-3D.dat";
 
 		// d1.dispose();

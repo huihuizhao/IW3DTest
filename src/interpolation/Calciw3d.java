@@ -397,7 +397,8 @@ public class Calciw3d extends JFrame {
 			}
 			
 		}
-		String directory = "D:\\FocusMap\\程序代码\\IW3D_Java三维插值\\testdata\\";
+//		String directory = "D:\\FocusMap\\程序代码\\IW3D_Java三维插值\\testdata\\";
+		String directory = "src/interpolation/Data/testdata/";
 		String saveFileName = "ProfileImage.jpg";
 		try {
 			SaveMatrixImage.createMatrixImage(tempArray, directory+saveFileName);

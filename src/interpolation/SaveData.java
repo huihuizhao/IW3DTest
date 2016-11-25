@@ -48,7 +48,8 @@ public class SaveData extends Frame {
 			double wx, double wy, double wz, double relation_y, double relation_z, double dx, double dy, double dz,
 			double beta, double delta, boolean b_Octant_search, int NR_EMPTY_OCT, int NR_DATA_OCT) {
 
-		String Directory = "D:\\FocusMap\\程序代码\\IW3D_Java三维插值\\testdata\\";
+//		String Directory = "D:\\FocusMap\\程序代码\\IW3D_Java三维插值\\testdata\\";
+		String Directory = "src/interpolation/Data/testdata/";
 		String SaveFilename = "SaveFilename";
 
 		// FileDialog d = new FileDialog(this, "Save File", FileDialog.SAVE);
