@@ -1,0 +1,1 @@
+javadoc -d ../javadoc -author -version  *.java
