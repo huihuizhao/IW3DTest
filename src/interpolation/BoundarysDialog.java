@@ -718,14 +718,37 @@ public class BoundarysDialog extends JFrame implements ActionListener {
 		} catch (ParseException pe) {
 			System.out.println(pe);
 		}
+		
+		//00
 //		parent.getBoundarys(min_x_new, max_x_new, nr_x_new, search_x_new, min_y_new, max_y_new, nr_y_new,
 //				search_y_new, min_z_new, max_z_new, "1", search_z_new, b_extract_slices, slice_filename_new,
 //				new_beta, new_delta, new_missingvalue, nr_assign_missingvalue, new_normalize, normalize_only_z,
 //				b_octant_search, write_surfer_grd, b_trend, X1, X2, b_blank2, new_NR_EMPTY_OCT, new_NR_DATA_OCT);
-		parent.getBoundarys("125", "140", "150", 25, "20", "30", "150",
-				25, min_z_new, max_z_new, "1", 2000, b_extract_slices, slice_filename_new,
+		
+		//计算深度剖面
+//		parent.getBoundarys("125", "140", "150", 25, "20", "30", "150",	25,
+//              min_z_new, max_z_new, "1", 2000, b_extract_slices, slice_filename_new,
+//				5, new_delta, new_missingvalue, nr_assign_missingvalue, new_normalize, normalize_only_z,
+//				false, write_surfer_grd, b_trend, X1, X2, b_blank2, new_NR_EMPTY_OCT, new_NR_DATA_OCT);
+		
+		
+//		//x和z互換，计算经度剖面的插值结果。更改交换经度和深度的小、大范围、生成图片的宽度、层数 参数
+//		parent.getBoundarys("0", "1000", "150", 1000, "20", "30", "150",25, 
+//				"125", "140", "1", 25, b_extract_slices, slice_filename_new,
+//				5, new_delta, new_missingvalue, nr_assign_missingvalue, new_normalize, normalize_only_z,
+//				false, write_surfer_grd, b_trend, X1, X2, b_blank2, new_NR_EMPTY_OCT, new_NR_DATA_OCT);
+		
+		//y和z互換，计算维度剖面的插值结果。更改交换经度和深度的小、大范围、生成图片的宽度、层数 参数
+		parent.getBoundarys("125", "140", "150", 25, "0", "1000", "150", 1000,
+				"20", "30", "150",25, b_extract_slices, slice_filename_new,
 				5, new_delta, new_missingvalue, nr_assign_missingvalue, new_normalize, normalize_only_z,
 				false, write_surfer_grd, b_trend, X1, X2, b_blank2, new_NR_EMPTY_OCT, new_NR_DATA_OCT);
+		
+		
+		
+		
+		
+		
 		
 		this.setVisible(false); // Pop the dialog down - deprecated
 		this.dispose(); // Destroy it. Cannot be shown again after disposed

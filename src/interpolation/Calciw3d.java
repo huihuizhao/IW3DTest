@@ -146,7 +146,17 @@ public class Calciw3d extends JFrame {
 		double[] yv = makegrid.yv(dy, ny, min_y);
 		// double[] zv = makegrid.zv(dz, nz, min_z);
 		double[] zv = new double[1];
-		zv[0] = 1000;
+		
+		//深度剖面插值
+//		zv[0] = 1000;
+		
+//		x和z互换，经度插值，重新设置剖面位置
+//		zv[0]=135;
+		
+//		y和z互换，维度插值，重新设置剖面位置
+		zv[0]=27;
+		
+		
 		nz = 0;
 
 		if (debug)
